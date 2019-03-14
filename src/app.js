@@ -8,6 +8,9 @@ import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
 import { setScrollPos } from './actions/styles';
 
+
+import { test } from './data/data'
+
 const store = configureStore();
 
 const App = () => (

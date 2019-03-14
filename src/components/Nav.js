@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { NavLink } from 'react-router-dom'
 class Nav extends React.Component{
     constructor(props){
         super(props);
@@ -32,11 +33,19 @@ class Nav extends React.Component{
     }
     render(){
         return (
-            <nav ref='component' className={`nav ${this.state.outsideHeader ? 'nav--outside-header' : ''}`}>
+            <nav ref='component' className={`nav ${this.state.outsideHeader || this.props.history.location.pathname!=='/' ?
+                'nav--outside-header' : ''}`
+            }>
                 <ul className="nav__list row">
-                    <li>Home</li>
-                    <li>Search</li>
-                    <li>Basket</li>
+                    <NavLink to="/">
+                        <li>Home</li>
+                    </NavLink>
+                    <NavLink to="/search">
+                        <li>Search</li>
+                    </NavLink>
+                    <NavLink to="/search">
+                        <li>Basket</li>
+                    </NavLink>
                 </ul>
             </nav>
         )

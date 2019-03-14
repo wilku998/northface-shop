@@ -5,14 +5,16 @@ import Nav from '../components/Nav'
 import Discounts from "../components/Discounts";
 import News from "../components/News";
 import Footer from "../components/Footer";
+import Search from "../components/Search";
 
 const AppRouter = () => (
     <Router>
         <div>
-            <Route path='/' component={Header} />
             <Route path='/' component={Nav} />
-            <Route path='/' component={Discounts} />
-            <Route path='/' component={News} />
+            <Route path='/' component={Header} exact={true}/>
+            <Route path='/' component={Discounts} exact={true} />
+            <Route path='/' component={News} exact={true} />
+            <Route path='/search' component={Search} />
             <Route path='/' component={Footer} />
         </div>
     </Router>

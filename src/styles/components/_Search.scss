@@ -1,0 +1,35 @@
+.search{
+    &-container{
+        padding: 10rem 0;
+        margin-bottom: 30rem;
+        background-image: linear-gradient(to right bottom, var(--color-grey-light-2), var(--color-grey-light-5));
+    }
+    min-height: 100vh;
+    background-color: var(--color-grey-light-1);
+    border: var(--line);
+    border-radius: .3rem;
+    overflow: hidden;
+    &__form{
+        padding: 1.5rem 4rem;
+        border-bottom: var(--line);
+        display: flex;
+        background-image: linear-gradient(to right bottom, var(--color-grey-light-1), var(--color-grey-light-2));
+        &__button{
+            font-size: 1.4rem;
+            padding: .3rem 1rem;
+            margin-left: auto;
+        }
+    }
+
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    &__item{
+        flex: 0 0 30%;
+    }
+
+}
