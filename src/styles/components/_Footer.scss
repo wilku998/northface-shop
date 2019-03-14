@@ -1,0 +1,37 @@
+.footer{
+    &-container{
+        height: 30rem;
+        background-image: linear-gradient(to right bottom, var(--color-primary-5), var(--color-primary-6));
+        position: fixed;
+        bottom: 0;
+        z-index: -1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    flex: 1;
+    color: var(--color-grey-light-1);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 2rem;
+    &__item{
+        flex: 0 0 30%;
+        padding: 2rem;
+    }
+    &__h{
+        font-weight: 400;
+        font-size: 2rem;
+        margin: 0 0 1rem 0;
+        padding-bottom: 1rem;
+        letter-spacing: .3rem;
+        line-height: 1;
+        border-bottom: 1px solid white;
+    }
+    
+    &__list{
+        list-style: none;
+    }
+}
