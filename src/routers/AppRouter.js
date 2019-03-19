@@ -14,7 +14,8 @@ const AppRouter = () => (
             <Route path='/' component={Header} exact={true}/>
             <Route path='/' component={Discounts} exact={true} />
             <Route path='/' component={News} exact={true} />
-            <Route path='/search' component={Search} />
+            <Route path='/search/:type' component={Search} />
+            <Route path='/search' component={Search} exact/>
             <Route path='/' component={Footer} />
         </div>
     </Router>

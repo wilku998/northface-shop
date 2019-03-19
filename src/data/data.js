@@ -50,26 +50,26 @@ export const shoes = [
         price: 119,
         sex: 'male',
         image: './images/mens_shoes_vojo.jpg',
-        cat: 'shes'
+        cat: 'shoes'
     },
     {
         name: 'Axis Evo Mid',
         price: 119,
         sex: 'male',
         image: './images/mens_shoes_axis.jpg',
-        cat: 'shes'}
+        cat: 'shoes'}
     ,{
         name: 'Litewave Fastpack II Mid Gtx GORE-TEX ',
         price: 119,
         sex: 'female',
         image: './images/womens_shoes_litewave.jpg',
-        cat: 'shes'}
+        cat: 'shoes'}
     ,{
         name: 'Terradora Evo Mid',
         price: 119,
         sex: 'female',
         image: './images/women_shoes_terradora.jpg',
-        cat: 'shes'
+        cat: 'shoes'
     },
 ]
 export const tops = [
@@ -78,43 +78,44 @@ export const tops = [
         price: 99,
         sex: 'male',
         image: `./images/mens_top_fine.jpg`,
-        cat: 'hoodie'                
+        cat: 'hoodies'                
     },
     {
-        name: `MEN’S GRADIENT SUNSET TRI-BLEND FULL ZIP HOODIE`,
+        name: `MENS GRADIENT SUNSET TRI-BLEND FULL ZIP HOODIE`,
         price: 119,
         sex: 'male',
         image: `./images/mens_top_sunset.jpg`,
-        cat: 'hoodie'                
+        cat: 'hoodies'                
     },    {
-        name: `WOMEN’S MOUNTAIN SWEATSHIRT PULLOVER`,
+        name: `WOMENS MOUNTAIN SWEATSHIRT PULLOVER`,
         price: 99,
-        sex: 'male',
+        sex: 'female',
         image: `./images/womens_top_mountain.jpg`,
-        cat: 'hoodie'                
+        cat: 'hoodies'                
     },    {
-        name: `WOMEN’S TEKNO RIDGE PULLOVER HOODIE`,
+        name: `WOMENS TEKNO RIDGE PULLOVER HOODIE`,
         price: 109,
-        sex: 'male',
+        sex: 'female',  
         image: `./images/womens_top_tekno.jpg`,
-        cat: 'hoodie'
+        cat: 'hoodies'
     }
 ]
 
 export const jackets = [
+
     {
-        name: `MEN'S 1996 RETRO NUPTSE JACKET`,
-        price: 249,
-        sex: 'male',
-        image: `./images/men's_1996_retro_nuptse_jacket.png`,
-        cat: 'jackets'
-    },
-    {
-        name: `MEN’S ARROWOOD TRICLIMATE® JACKET`,
+        name: `MENS ARROWOOD TRICLIMATE® JACKET`,
         price: 199,
         sex: 'male',
         image: './images/mens_arrowood_jacket.png',
         cat: 'jackets'        
+    },
+    {
+        name: `MENS 1996 RETRO NUPTSE JACKET`,
+        price: 249,
+        sex: 'male',
+        image: `./images/mens_retro_jacket.png`,
+        cat: 'jackets'
     },
     {
         name: `WOMEN'S GOTHAM PARKA II`,

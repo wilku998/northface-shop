@@ -13,7 +13,7 @@ class Discounts extends React.Component{
         return(
             <div className="discounts">
                 <div className="discounts__content row">
-                    {tents.map(e => (
+                    {tents.slice(0, 2).map(e => (
                         <div key={e.name} className="discounts__item" style={{background: `url(${e.image}) white center`}}>
                             <div className="discounts__item__info">
                                 <h3 className="discounts__item__info__name">{e.name}</h3>

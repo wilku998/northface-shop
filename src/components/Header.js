@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { setHeaderHeight } from '../actions/styles';
-
+import { Link } from 'react-router-dom';
+ 
 class Header extends React.Component{
     constructor(props){
         super(props);
@@ -28,16 +29,16 @@ class Header extends React.Component{
                         </h1>
                         <ul className="header__title__list">
                             <li>
-                                Jacekts
+                                <Link to="search/jackets">Jacekts</Link>
                             </li>
                             <li>
-                                Pants
+                                <Link to ="search/hoodies">Hoodies</Link>
                             </li>
                             <li>
-                                Backbags
+                                <Link to ="search/shoes">Shoes</Link>
                             </li>
                             <li>
-                                Tents
+                                <Link to ="search/tents">Tents</Link>
                             </li>
                         </ul>
                     </div>
