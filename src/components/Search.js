@@ -1,4 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { openItem } from '../actions/shopping';
+
 import { jackets, shoes, tops, tents } from '../data/data';
 let data = [...jackets, ...shoes, ...tops, ...tents];
 
@@ -54,7 +57,7 @@ class Search extends React.Component{
         return (
             <section className="search-container">
                 <div className="search row">
-                    <form className="search__form">
+                    <form className="search__form" onSubmit={e => e.preventDefault()}>
                         <label className="label">
                             Name
                             <input className="input" type="text" onChange={(e) => this.onPropertyChange('formName', e.target.value)}
@@ -92,12 +95,13 @@ class Search extends React.Component{
                                 <option value="dec">Price decreasing</option>
                             </select>
                         </label>
-                        <button className="button-1 search__form__button">Search</button>
                     </form>
                     <div className="search__items">
                         {this.sortItems(this.getItems(this.state.formName, this.state.formSex, this.state.formCat), this.state.sortBy)
                         .map((e, i) => (
-                            <div key={i} className="search__item" style={{ background:`url(${e.image}) white center/cover` }}>
+                            <div key={i} className="search__item" style={{ background:`white url(${e.image}) center/cover` }}
+                                onClick={() => this.props.openItem(e)}
+                            >
 
                                 <div className="search__item-info">
                                     <h3 className="search__item__name">{e.name}</h3>
@@ -112,4 +116,8 @@ class Search extends React.Component{
     }
 }
 
-export default Search;
+const mapDispatchToProps = (dispatch) => ({
+    openItem: (selectedItem) => dispatch(openItem(selectedItem))
+})
+
+export default connect(undefined, mapDispatchToProps)(Search);

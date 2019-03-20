@@ -29,10 +29,7 @@ module.exports = (env) => {
                 test: /\.(png|jpg|jpeg|gif)$/,
                 use: [
                     {
-                        loader: 'file-loader',
-                        options: {
-                        name: '[name].[ext]',
-                        },
+                        loader: 'file-loader'
                     }
                 ]
             }]

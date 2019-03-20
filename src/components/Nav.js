@@ -44,7 +44,7 @@ class Nav extends React.Component{
                         <li>Search</li>
                     </NavLink>
                     <NavLink to="/search">
-                        <li>Basket</li>
+                        <li>Cart</li>
                     </NavLink>
                 </ul>
             </nav>
@@ -53,7 +53,7 @@ class Nav extends React.Component{
 } 
 
 const mapStateToProps = (state) => ({
-    scrollPos: state.scrollPos,
-    headerHeight: state.headerHeight
+    scrollPos: state.styles.scrollPos,
+    headerHeight: state.styles.headerHeight
 })
 export default connect(mapStateToProps)(Nav);

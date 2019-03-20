@@ -1,0 +1,105 @@
+.item-popup{
+    background-image: linear-gradient(to right bottom, var(--color-grey-light-2), var(--color-grey-light-4));
+    border-radius: .3rem;
+    border: var(--line);
+    display: flex;
+    padding: 2rem;
+    box-shadow: 0 2rem 4rem rgba(black, .25);
+    position: relative;
+    &__close{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: var(--color-grey-dark-2);
+        cursor: pointer;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+
+        &:first-child{
+            padding-right: 2rem;
+            border-right: var(--line);
+        }
+        &:last-child{
+            padding-left: 2rem;
+        }
+    }
+
+    &__title{
+        width: 35rem;
+        margin-bottom: 1rem;
+    }
+
+    &__price{
+        margin-bottom: 1rem;
+    }
+
+    &__img{
+        height: 35rem;
+        width: 35rem;
+    }
+
+    &__select{
+        display: flex;
+
+        &-container{
+            &:not(:first-of-type){
+                margin-top: 2rem;
+            }
+        }
+
+        & > div {
+            width: 3.5rem;
+            height: 3.5rem;
+            border: var(--line);
+            &:not(:last-of-type){
+                margin-right: 1rem;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__button{
+        margin-top: auto;
+    }
+
+    &__size{
+        background-color: var(--color-grey-light-4-5);
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--selected{
+            border: var(--line-bold) !important;
+        }
+    }
+
+    &__color{
+        &--red{
+            background-image: linear-gradient(to right bottom, #df4444, #a51e1e)
+        }
+        &--green{
+            background-image: linear-gradient(to right bottom, #60c042, #3b8026)
+        }
+        &--blue{
+            background-image: linear-gradient(to right bottom, #4244b4, #1d1e7c)
+        }
+        
+        &--selected{
+            position: relative;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                opacity: .15;
+                border: 2px solid var(--color-grey-dark-1);
+            }
+        }
+    }
+}

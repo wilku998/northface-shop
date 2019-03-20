@@ -57,10 +57,11 @@ body{
 }
 
 .button-1{
-    background-color: var(--color-grey-light-2);
+    background: var(--color-grey-light-2);
     color: var(--color-grey-dark-1);
     border: var(--line);
     cursor: pointer;
+    padding: .5rem 1.5rem;
     &:focus{
         outline: none;
     }

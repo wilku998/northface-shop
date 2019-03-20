@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { setHeaderHeight } from '../actions/styles';
 import { Link } from 'react-router-dom';
- 
+
 class Header extends React.Component{
     constructor(props){
         super(props);

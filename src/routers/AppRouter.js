@@ -6,10 +6,12 @@ import Discounts from "../components/Discounts";
 import News from "../components/News";
 import Footer from "../components/Footer";
 import Search from "../components/Search";
+import ItemPopup from '../components/ItemPopup';
 
 const AppRouter = () => (
     <Router>
         <div>
+            <ItemPopup />
             <Route path='/' component={Nav} />
             <Route path='/' component={Header} exact={true}/>
             <Route path='/' component={Discounts} exact={true} />
